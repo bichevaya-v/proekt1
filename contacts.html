@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Веб-студия "Мантис"</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.contacts.css">
+
+    <style type="text/css">
+        header {
+            background: url("img/banner4.png") no-repeat 50% 50%, #2D2D44;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <div class="wrap content">
+                <div id="logo">
+                    <a href="index.html">MANTIS</a>
+                </div>
+                <ul id="Menu" class="menu">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="works.html">Портфолио</a></li>
+                    <li class="active"><a href="contacts.html">Контакты</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()"><span class="hamburger"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="oscr">
+            <p>У нас есть свой офис, мы всегда рады клиентам</p>
+            <a class="button" href="#contacts">Где это?</a>
+        </div>
+    </header>
+    <section id="intouch">
+        <h1>Форма связи</h1>
+        <div class="wrap feedback">
+            <div class="forms">
+                <form>
+                    <label>Ваше имя</label>
+                    <input type="text" placeholder="Тамара" id="name">
+                    <label>Электронная почта</label>
+                    <input type="email" placeholder="example@domain.ru" id="email">
+                    <label>Ваше сообщение</label>
+                    <textarea rows="4" id="message" placeholder="Ваше сообщение..."></textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="textform">
+                <p><b>Есть к нам какие-либо вопросы?</b><br>Мы с радостью ответим на них.</p>
+                <p><b>Хотите заказать разработку сайта?</b><br>Мы свяжемся с вами в кратчайшие сроки.</p>
+                <p><b>Хотите стать частью команды?</b><br>Присылайте нам свое резюме в сообщении.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="wrap">
+        <h1>Контактная информация</h1>
+        <div id="contact_box">
+            <div>
+                <p class="contact_item address">Текучева, 99</p>
+            </div>
+            <div>
+                <p class="contact_item email">ex@domain.ru</p>
+            </div>
+            <div>
+                <p class="contact_item phone">+7(903)123 45 67</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173294.91640414152!2d39.487573981122964!3d47.260922725400036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3c777c3b4b6ef%3A0x8248b451e48b4d04!2z0KDQvtGB0YLQvtCyLdC90LAt0JTQvtC90YMsINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1488491156637"
+            width="800" height="360" frameborder="0" style="border:0"></iframe>
+    </section>
+    <footer>
+        <p>Powered by Gulp, CSS Smart-Grid, LESS. &#169; 2017</p>
+    </footer>
+
+    <script>
+        $('.bxslider').bxSlider({
+            auto: true,
+            responsive: true,
+            adaptiveHeight: true,
+            pause: 10000
+        });
+
+        function myFunction() {
+            var x = document.getElementById("Menu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+</body>
+
+</html>
