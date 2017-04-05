@@ -1,0 +1,50 @@
+body, html {
+  margin:0px;
+  padding:0px;
+  height: 100%;
+}
+
+* html #maket {
+  height: 100%;
+}
+
+#maket {
+  width:100%;
+  margin:0 auto;
+  min-height: 100%;
+}
+
+#header{
+  background-color: #90EE90;
+  text-align:center;
+} 
+
+#ims1{
+  padding:20px;  
+  float:left;
+}
+#ims2 {
+  padding:20px;  
+  float:right;
+}
+
+#content{
+  background-color:# #90EE90;  
+text-align:justify;
+}
+
+#footer{
+  background-color: #90EE90;
+  clear:both;
+  height: 50px;
+  margin-top:-50px;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+ text-align:center;
+}
+
+#rasporka {
+  height: 50px;
+}
+
